@@ -83,36 +83,40 @@ const SuccessStories: React.FC = () => {
   };
 
   const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
-    <div className="bg-[#F8F8F8] rounded-[20px] h-[208px] w-[430px] p-6 shadow-lg border border-black/10 hover:shadow-xl transition-all duration-300  flex flex-col flex-shrink-0 mx-4">
+    <div className="bg-[#F8F8F8] rounded-[20px] h-[180px] md:h-[208px] w-[250px] md:w-[430px] p-4 md:p-6 shadow-lg border border-black/10 hover:shadow-xl transition-all duration-300 flex flex-col flex-shrink-0 mx-2 md:mx-4">
       {/* Header with avatar and rating */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center space-x-3 w-full">
-          <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold text-sm overflow-hidden">
+      <div className="flex items-center justify-between mb-3 md:mb-4">
+        <div className="flex items-center space-x-2 md:space-x-3 w-full">
+          <div className=" w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold text-sm overflow-hidden flex-shrink-0">
             <img
               src="/assets/46705cc7453cb9e796bded5e839360f8165b3ca6.jpg"
               alt="Avatar"
               width={48}
               height={48}
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full min-w-0">
             <div className="flex items-center justify-between w-full">
-              <h3 className="font-semibold text-gray-900 text-[14px] leading-[20px] md:text-[16px] md:leading-[24px]">
+              <h3 className="font-semibold text-gray-900 text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] lg:text-[16px] lg:leading-[24px] truncate">
                 {testimonial.name}
               </h3>
-              <div className="flex gap-[1px]">
+              <div className="hidden md:flex gap-[1px] flex-shrink-0">
                 {renderStars(testimonial.rating)}
               </div>
             </div>
-            <p className="text-black text-[10px] leading-[14px] md:text-[12px] md:leading-[16px] font-semibold">
+            <p className="text-black text-[9px] leading-[12px] md:text-[10px] md:leading-[14px] lg:text-[12px] lg:leading-[16px] font-semibold truncate">
               {testimonial.title}, {testimonial.company}
             </p>
+            <div className=" md:hidden gap-[1px] flex my-1 flex-shrink-0">
+              {renderStars(testimonial.rating)}
+            </div>
           </div>
         </div>
       </div>
 
       {/* Quote */}
-      <blockquote className="text-[#303030] text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] text-wrap">
+      <blockquote className="text-[#303030] text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] lg:text-[16px] lg:leading-[24px] text-wrap flex-grow">
         "{testimonial.quote}"
       </blockquote>
     </div>
@@ -146,28 +150,37 @@ const SuccessStories: React.FC = () => {
         .scroll-right {
           animation: scrollRight 30s linear infinite;
         }
+        
+        @media (max-width: 768px) {
+          .scroll-left {
+            animation-duration: 20s;
+          }
+          .scroll-right {
+            animation-duration: 20s;
+          }
+        }
       `}</style>
 
-      <section className="relative w-full py-20 overflow-hidden bg-white">
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
+      <section className="relative w-full py-12 md:py-20 overflow-hidden bg-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header Section */}
-          <div className="text-center mb-16">
-            <div className="inline-block px-3 py-1  text-[#252525] text-[14px] leading-[20px] mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block px-3 py-1 text-[#252525] text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] mb-3 md:mb-4">
               Success Stories
             </div>
-            <h2 className="text-[35px] leading-[45px] md:text-[44px] md:leading-[60px] font-semibold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-[28px] leading-[36px] md:text-[35px] md:leading-[45px] lg:text-[44px] lg:leading-[60px] font-semibold text-gray-900 mb-3 md:mb-4 tracking-tight px-4">
               Proven Results from Real Clients
             </h2>
-            <p className="text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] text-[#64717E] max-w-2xl mx-auto">
+            <p className="text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] lg:text-[16px] lg:leading-[24px] text-[#64717E] max-w-2xl mx-auto px-4">
               Businesses transforming their marketing with VILMA.AI
             </p>
           </div>
 
           {/* First Row - Moving Left to Right */}
-          <div className="mb-8 relative overflow-hidden">
+          <div className="mb-6 md:mb-8 relative overflow-hidden">
             {/* Fade overlays */}
-            <div className="absolute left-0 top-0 w-[500px] h-full bg-gradient-to-r bg-opacity-50 from-white to-transparent z-20 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 w-[500px] h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-r bg-opacity-50 from-white to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
 
             <div className="flex scroll-left">
               {[...testimonials, ...testimonials].map((testimonial, index) => (
@@ -182,8 +195,8 @@ const SuccessStories: React.FC = () => {
           {/* Second Row - Moving Right to Left */}
           <div className="relative overflow-hidden">
             {/* Fade overlays */}
-            <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
 
             <div className="flex scroll-right">
               {[
