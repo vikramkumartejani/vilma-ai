@@ -33,14 +33,14 @@ const FAQs: React.FC = () => {
   }
 
   return (
-    <section className="mt-[60px] w-full py-[60px] px-4 md:px-6 lg:px-8">
+    <section className="md:mt-[60px] w-full py-[30px] sm:py-[60px] px-4 md:px-6 lg:px-8">
       <div className="max-w-[896px] w-full mx-auto">
         {/* Header */}
         <div className="text-center mb-11">
           <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
             FAQs
           </span>
-          <h2 className="my-4 text-4xl md:text-[44px] leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
+          <h2 className="my-4 text-[36px] md:text-[44px] leading-[44px] md:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
             Frequently Asked Questions
           </h2>
           <p className="text-[16px] leading-[24px] font-normal text-[#64717E]">
@@ -49,11 +49,11 @@ const FAQs: React.FC = () => {
         </div>
 
         {/* FAQ Accordion Items */}
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqItems.map((item) => (
             <div
               key={item.id}
-              className={`rounded-[16px] pr-8 shadow-[0px_1px_2px_0px_#0000000D] backdrop-blur-[4px] border border-[#E2E8F099] transition-all duration-300 ease-in-out ${
+              className={`rounded-[16px] pr-5 sm:pr-8 shadow-[0px_1px_2px_0px_#0000000D] backdrop-blur-[4px] border border-[#E2E8F099] transition-all duration-300 ease-in-out ${
                 openItem === item.id
                   ? 'bg-[#FFFBEDCC]'
                   : 'bg-[#FFFFFFCC]'
@@ -62,9 +62,9 @@ const FAQs: React.FC = () => {
               {/* Question Row */}
               <button
                 onClick={() => toggleItem(item.id)}
-                className="w-full py-6 pl-12 text-left flex items-center justify-between transition-all duration-200 rounded-lg group cursor-pointer"
+                className="w-full py-6 pl-5 sm:pl-12 text-left flex items-center justify-between transition-all duration-200 rounded-lg group cursor-pointer"
               >
-                <h3 className="font-semibold text-[#333333] text-[20px] leading-[24px]">
+                <h3 className="font-semibold text-[#333333] text-[16px] sm:text-[20px] leading-[24px]">
                   {item.question}
                 </h3>
                 {/* Chevron Icon */}
@@ -98,7 +98,7 @@ const FAQs: React.FC = () => {
                     : 'max-h-0 opacity-0 pb-0'
                 }`}
               >
-                <div className="pr-8 pl-[88px]">
+                <div className="px-5 sm:pr-8 sm:pl-[88px]">
                   <p className="text-[#64717E] text-[16px] leading-[24px] font-normal">
                     {item.answer}
                   </p>

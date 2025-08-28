@@ -162,17 +162,17 @@ const SuccessStories: React.FC = () => {
         }
       `}</style>
 
-      <section className="relative w-full py-12 md:py-20 overflow-hidden bg-white">
-        <div className="relative z-10 w-full  mx-auto">
+      <section id="successstories" className="scroll-mt-12 relative w-full py-[30px] md:py-[60px] overflow-hidden bg-white">
+        <div className="relative z-10 w-full mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block px-3 py-1 text-[#252525] text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] mb-3 md:mb-4">
+          <div className="text-center mb-[60px] px-4">
+            <div className="inline-block px-3 py-1 text-[#252525] text-[14px] leading-[20px]">
               Success Stories
             </div>
-            <h2 className="text-[28px] leading-[36px] md:text-[35px] md:leading-[45px] lg:text-[44px] lg:leading-[60px] font-semibold text-gray-900 mb-3 md:mb-4 tracking-tight px-4">
+            <h2 className="my-3 text-[36px] md:text-[44px] leading-[44px] md:leading-[60px] font-semibold text-[#252525] tracking-[-2.44px] px-5">
               Proven Results from Real Clients
             </h2>
-            <p className="text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] lg:text-[16px] lg:leading-[24px] text-[#64717E] max-w-2xl mx-auto px-4">
+            <p className="text-[16px] leading-[24px] text-[#64717E] max-w-2xl mx-auto px-4">
               Businesses transforming their marketing with VILMA.AI
             </p>
           </div>

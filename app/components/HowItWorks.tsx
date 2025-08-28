@@ -37,14 +37,14 @@ const HowItWorks = () => {
         }
     ]
     return (
-        <div className='w-full mt-[60px] py-[60px] px-4 md:px-6 lg:px-8'>
+        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:px-6 lg:px-8'>
             <div className='max-w-[1264px] mx-auto w-full'>
                 {/* Header Section */}
                 <div className="text-center mb-[60px]">
                     <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
                         How it Works
                     </span>
-                    <h2 className="my-4 text-4xl md:text-[44px] leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
+                    <h2 className="my-4 text-[36px] md:text-[44px] leading-[44px] md:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
                         How VILMA.AI Works
                     </h2>
                     <p className="text-[16px] leading-[24px] font-normal text-[#64717E]">
@@ -59,14 +59,17 @@ const HowItWorks = () => {
                             key={useCase.id}
                             className='bg-[#FFFBED] ring-[0.2px] ring-[#06244333] rounded-[30px] p-5 hover:shadow-sm transition-shadow duration-300'
                         >
-                            <div className='w-[350px] bg-white rounded-[18px] h-[258px] bg-cover flex items-center justify-center' style={{backgroundImage:"url('/assets/how-it-works-card-bg.png')"}}>
-                                <Image
-                                    src={useCase.imageSrc}
-                                    alt={useCase.imageAlt}
-                                    width={250}
-                                    height={200}
-                                    className='object-cover mt-1'
-                                />
+                            <div className='w-full aspect-[350/258] bg-white rounded-[18px] relative overflow-hidden'>
+                                <div className='absolute inset-0 bg-center bg-cover' style={{backgroundImage: "url('/assets/how-it-works-card-bg.png')"}}></div>
+                                <div className='relative w-full h-full flex items-center justify-center'>
+                                    <Image
+                                        src={useCase.imageSrc}
+                                        alt={useCase.imageAlt}
+                                        width={250}
+                                        height={200}
+                                        className='w-[80%] h-auto object-contain mt-1'
+                                    />
+                                </div>
                             </div>
                             <h3 className='mt-6 text-[#000000] text-[16px] leading-[24px] font-light'>{useCase.steps}</h3>
                             <div className='mt-6 space-y-3'>

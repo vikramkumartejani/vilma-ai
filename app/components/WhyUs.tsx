@@ -70,24 +70,24 @@ const WhyUs = () => {
     ];
 
     return (
-        <div className='w-full mt-[60px] py-[60px] px-4 md:pl-6 lg:pl-8 relative'>
+        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:pl-6 lg:pl-8 relative'>
             <div className='max-w-[1264px] mx-auto w-full flex items-start justify-between'>
-                <div className='max-w-[567px] w-full'>
-                    <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
+                <div className='max-w-[567px] w-full text-center sm:text-left'>
+                    <h4 className="text-[14px] leading-[20px] font-medium text-[#252525]">
                         Why Us
-                    </span>
-                    <h2 className="my-6 text-4xl md:text-[44px] leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
+                    </h4>
+                    <h2 className="my-6 text-[36px] md:text-[44px] leading-[44px] md:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
                         Why Businesses Choose VILMA.AI
                     </h2>
                     <p className="text-[16px] leading-[24px] font-normal text-[#64717E]">
                         Powerful reasons to centralize your marketing with us
                     </p>
-                    <div className='my-11'>
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                    <div className='my-[50px] sm:my-11'>
+                        <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
                             {features.map((feature) => (
                                 <div
                                     key={feature.id}
-                                    className="pl-4 py-[23.5px]"
+                                    className="pl-8 sm:pl-4 py-[23.5px]"
                                     style={{
                                         borderLeft: '1px solid',
                                         borderImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%) 1'
@@ -98,7 +98,7 @@ const WhyUs = () => {
                                             {feature.icon}
                                         </div>
                                     </div>
-                                    <h3 className="font-semibold text-[18px] leading-[24px] text-[#333333]">
+                                    <h3 className="font-semibold text-left text-[18px] leading-[24px] text-[#333333]">
                                         {feature.titleLines.map((line, index) => (
                                             <React.Fragment key={index}>
                                                 {line}
@@ -110,12 +110,12 @@ const WhyUs = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="flex gap-3 justify-start items-center">
-                        <button className="h-11 bg-[#F0B000] rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+                    <div className="flex gap-3 justify-start items-center sm:flex-row flex-col">
+                        <button className="h-11 sm:w-fit w-full bg-[#F0B000] rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                             Try VILMA.AI for free today
                         </button>
 
-                        <button className="h-11 border border-[#F0B000] rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+                        <button className="h-11 sm:w-fit w-full border border-[#F0B000] rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                             Request a Free Demo
                         </button>
                     </div>

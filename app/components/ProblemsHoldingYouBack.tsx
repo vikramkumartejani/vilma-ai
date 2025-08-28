@@ -30,14 +30,14 @@ const ProblemsHoldingYouBack = () => {
         }
     ]
     return (
-        <div className='w-full mt-[120px] py-[60px] px-4 md:px-6 lg:px-8'>
+        <div className='w-full mt-5 sm:mt-10 md:mt-20 lg:mt-[120px] py-[30px] md:py-10 lg:py-[60px] px-4 md:px-6 lg:px-8'>
             <div className='max-w-[1264px] mx-auto w-full'>
                 {/* Header Section */}
                 <div className="text-center mb-[60px]">
-                    <h2 className="mb-3 text-4xl md:text-[44px] leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
+                    <h2 className="mb-3 text-[36px] md:text-[44px] leading-[44px] sm:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
                         Are These Problems Holding You Back?
                     </h2>
-                    <p className="text-[16px] leading-[24px] font-normal text-[#64717E]">
+                    <p className="text-[16px] leading-[24px] font-semibold sm:font-normal text-[#64717E]">
                         Most businesses struggle with inefficient marketing processes. You're not alone.
                     </p>
                 </div>

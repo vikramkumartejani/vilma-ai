@@ -87,14 +87,14 @@ const Footer: React.FC = () => {
     ]
 
     return (
-        <footer className='w-full mt-[60px] px-4 md:px-6 lg:px-8 rounded-t-[17px] bg-[#FAFAFA] border-t-[0.3px] border-[#00000018]'>
-            <div className='max-w-[1200px] mx-auto w-full py-16'>
-                {/* Main Footer Content */}
-                <div className='w-full flex items-start justify-between gap-8 mb-12'>
+        <footer className='w-full mt-[30px] sm:mt-[60px] px-4 md:px-6 lg:px-8 rounded-t-[17px] bg-[#FAFAFA] border-t-[0.3px] border-[#00000018]'>
+            <div className='max-w-[1200px] mx-auto w-full py-[30px] sm:py-16'>
+                <div className='w-full flex items-start lg:flex-row flex-col justify-between gap-[60px] sm:gap-8 mb-16 sm:mb-12'>
+
                     {/* Left Section - Company Info */}
-                    <div className='max-w-[386px] w-full'>
-                        <Image src='/assets/logo.svg' alt='logo' width={135} height={38} />
-                        <p className='my-[24.13px] text-[#64717E] text-[16.09px] leading-[26.15px] font-normal'>
+                    <div className='lg:max-w-[386px] w-full'>
+                        <Image src='/assets/logo.svg' alt='logo' width={135} height={38} className='sm:w-[135px] w-[232px] h-auto' />
+                        <p className='my-[17px] sm:my-[24.13px] text-[#64717E] text-[16.09px] leading-[26.15px] font-semibold sm:font-normal'>
                             The AI-powered virtual marketing agency that automates your campaigns, saves time, and drives measurable results for your business.
                         </p>
                         <div className='flex items-center gap-[16.09px]'>
@@ -113,9 +113,9 @@ const Footer: React.FC = () => {
 
                     {/* Right Section - Navigation Links */}
                     <div className='w-full flex items-start justify-between'>
-                        <div className='w-full flex items-start gap-[32.18px]'>
+                        <div className='w-full grid grid-cols-2 sm:grid-cols-4 lg:flex items-start gap-9 sm:gap-[32.18px]'>
                             {footerSections.map((section) => (
-                                <div key={section.title} className='w-full max-w-[176.98px]'>
+                                <div key={section.title} className='w-full max-w-full lg:max-w-[176.98px]'>
                                     <h3 className='font-semibold text-[#252525] text-[18px] tracking-[-0.45px] mb-[16.09px]'>{section.title}</h3>
                                     <ul className='space-y-[12.07px]'>
                                         {section.links.map((link) => (

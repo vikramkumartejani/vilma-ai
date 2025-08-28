@@ -88,14 +88,14 @@ const PricingPlans: React.FC = () => {
     }
 
     return (
-        <div className='w-full mt-[60px] py-[60px] px-4 md:px-6 lg:px-8'>
+        <div id='pricing' className='w-full md:mt-[60px] py-[30px] sm:py-[60px] px-4 md:px-6 lg:px-8 scroll-mt-12'>
             <div className='max-w-[1264px] mx-auto w-full'>
                 {/* Header Section */}
-                <div className="text-center mb-[60px]">
+                <div className="text-center mb-9 sm:mb-[60px]">
                     <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
                         Pricing Plans
                     </span>
-                    <h2 className="my-3 text-4xl md:text-[44px] leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
+                    <h2 className="my-3 text-[36px] md:text-[44px] leading-[44px] sm:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
                         Simple, Transparent Pricing
                     </h2>
                     <p className="text-[16px] leading-[24px] font-normal text-[#64717E]">

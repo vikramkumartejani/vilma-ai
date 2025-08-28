@@ -53,14 +53,14 @@ const TrustedBy: React.FC = () => {
     const duplicatedCompanies = [...trustedCompanies, ...trustedCompanies, ...trustedCompanies, ...trustedCompanies]
 
     return (
-        <div className='bg-[#F6F7F9] py-9 w-full px-4 md:px-6 lg:px-8'>
-            <h2 className='text-[#000000] text-[16px] leading-[24px] font-semibold text-center mb-5'>
+        <div className='bg-[#F6F7F9] py-6 sm:py-9 w-full '>
+            <h2 className='text-[#000000] text-[16px] leading-[24px] font-semibold text-center mb-5 px-4 md:px-6 lg:px-8'>
                 Trusted By
             </h2>
 
             {/* Auto-sliding Carousel Container */}
             <div className='max-w-[1160px] mx-auto overflow-hidden'>
-                <div className='flex items-center gap-4 sm:gap-[109px] animate-scroll'>
+                <div className='flex items-center gap-6 sm:gap-[109px] animate-scroll'>
                     {duplicatedCompanies.map((company, index) => (
                         <div
                             key={`${company.id}-${index}`}
