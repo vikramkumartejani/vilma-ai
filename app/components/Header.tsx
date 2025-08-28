@@ -98,12 +98,7 @@ const Header: React.FC = () => {
                                 <li key={link.id}>
                                     <Link
                                         href={link.href}
-                                        className={`text-[14px] leading-[24px] font-light font-inter px-3 py-2 rounded-md transition-all duration-200 ${
-                                            isScrolled 
-                                            ? 'text-gray-700 hover:text-[#F0B000] hover:bg-yellow-50/50' 
-                                            : 'text-gray-800 hover:text-[#F0B000] hover:bg-white/10'
-                                        }`}
-                                    >
+                                        className='text-[14px] leading-[24px] [#F0B000] font-light font-inter '>
                                         {link.label}
                                     </Link>
                                 </li>
