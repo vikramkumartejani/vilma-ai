@@ -70,7 +70,7 @@ const WhyUs = () => {
     ];
 
     return (
-        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:pl-6 lg:pl-8 border-y relative overflow-hidden'>
+        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:pl-6 lg:pl-8 relative overflow-hidden'>
             <div className='max-w-[1264px] mx-auto w-full flex items-start justify-between'>
                 <div className='max-w-[567px] w-full text-center sm:text-left'>
                     <h4 className="text-[14px] leading-[20px] font-medium text-[#252525]">
