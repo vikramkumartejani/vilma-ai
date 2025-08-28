@@ -1,11 +1,42 @@
 import Image from 'next/image'
 import React from 'react'
 
+const FounderCard = () => {
+    return (
+        <div className="bg-white rounded-[10px] px-4.5 py-4 max-w-[472px] w-full" style={{ boxShadow: "0px 4px 30px 0px #0000000F" }}>
+            <div className="flex items-center gap-2 mb-2.5">
+                <div className="min-w-12 h-12 p-[1.5px] rounded-full relative [background:linear-gradient(180deg,#FFD11C_0%,#FF7523_50%,#FF4061_75%,#FF8CC0_87.5%,#65B1E5_93.75%,#3250AC_100%)]">
+                    <div className='w-full h-full bg-white rounded-full overflow-hidden'>
+                        <Image
+                            src="/assets/founder.webp"
+                            alt="María González"
+                            width={48}
+                            height={48}
+                            className='w-full h-full object-cover'
+                        />
+                    </div>
+                </div>
+                <div className='space-y-1'>
+                    <h3 className="text-[16px] leading-[20px] font-bold text-[#64717E]">
+                        María González
+                    </h3>
+                    <p className="text-[16px] leading-[20px] font-light text-[#64717E]">
+                        Founder, Digital Agency
+                    </p>
+                </div>
+            </div>
+            <p className="text-[16px] leading-[24px] text-[#64717E] font-semibold sm:font-normal">
+                “Since implementing VILMA.AI, we’ve cut down 60% of the time spent on planning and executing campaigns, and our cost per acquisition dropped 35% in just three months.”
+            </p>
+        </div>
+    )
+}
+
 const Hero = () => {
     return (
         <div className='relative w-full px-4 md:pl-6 lg:pl-8 bg-fixed' style={{ backgroundImage: "url('/assets/hero-bg.svg')" }}>
             <div className='flex items-center pt-[128px] sm:pt-[201px] max-w-[1263px] mx-auto'>
-                <div className='max-w-[567px] w-full pb-10 sm:pb-[170px] text-center sm:text-left'>
+                <div className='max-w-[567px] w-full sm:pb-[170px] text-center sm:text-left'>
                     <h4 className="text-[14px] leading-[20px] font-medium text-[#252525] px-3">
                         Frictionless. Effortless.
                     </h4>
@@ -16,7 +47,7 @@ const Hero = () => {
                         The AI-powered virtual marketing agency for solopreneurs, small businesses, and boutique agencies.VILMA.AI centralizes and automates your digital marketing, saving time, money, and effort.
                     </p>
 
-                    <div className="mt-11 mb-6 flex gap-3 justify-center sm:justify-start sm:flex-row flex-col items-center ">
+                    <div className="mt-11 mb-6 flex gap-3 justify-center sm:justify-start sm:flex-row flex-col items-center max-w-[257px] mx-auto sm:mx-0 sm:max-w-[480px]">
                         <button className="h-11 bg-[#F0B000] w-full sm:w-fit rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                             Try VILMA.AI for free today
                         </button>
@@ -27,12 +58,21 @@ const Hero = () => {
                     </div>
                     <p className='text-[#64717E] text-[16px] leading-[24px] font-semibold sm:font-normal'>No credit card · No commitment · Results from day one</p>
                 </div>
-                {/* <div>
-                    <Image src='/assets/hero-right-banner.webp' alt='hero-right-banner' width={710} height={613} className=' absolute right-0 bottom-0' />
-                    <div>
-
+                {/* <div className="relative flex-1 hidden lg:block">
+                    <Image
+                        src='/assets/hero-right-banner.webp'
+                        alt='hero-right-banner'
+                        width={710}
+                        height={613}
+                        className='absolute right-0 bottom-0'
+                    />
+                    <div className="">
+                        <FounderCard />
                     </div>
                 </div> */}
+            </div>
+            <div className='lg:hidden block mt-[17px] mb-10'>
+                <FounderCard />
             </div>
         </div>
     )
