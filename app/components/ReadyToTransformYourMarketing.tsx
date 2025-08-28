@@ -23,11 +23,11 @@ const ReadyToTransformYourMarketing: React.FC = () => {
           </p>
 
           <div className="flex gap-3 sm:gap-6 justify-center items-center sm:flex-row flex-col sm:mb-6">
-            <button className="h-11 bg-[#F0B000] sm:w-fit w-full rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+            <button className="h-11 bg-[#F0B000] hover:bg-[#E0A000] transition duration-200 sm:w-fit w-full rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
               Try VILMA.AI free today
             </button>
 
-            <button className="h-11 sm:w-fit w-full border border-[#F0B000] rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+            <button className="h-11 sm:w-fit w-full border border-[#F0B000] hover:bg-[#e0a00017] transition duration-200 rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
               Request a demo
             </button>
           </div>

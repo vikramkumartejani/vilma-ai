@@ -90,7 +90,7 @@ const SuccessStories: React.FC = () => {
         <div className="flex items-center space-x-2 md:space-x-3 w-full">
           <div className=" w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold text-sm overflow-hidden flex-shrink-0">
             <img
-              src="/assets/46705cc7453cb9e796bded5e839360f8165b3ca6.jpg"
+              src="/assets/review-profile.png"
               alt="Avatar"
               width={48}
               height={48}

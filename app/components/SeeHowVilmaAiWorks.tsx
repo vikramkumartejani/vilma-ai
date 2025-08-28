@@ -22,7 +22,7 @@ const SeeHowVilmaAiWorks = () => {
                         Automate campaigns, generate strategic documents instantly, access 17 AI specialists 24/7.
                     </p>
 
-                    <button className="h-11 bg-[#F0B000] rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+                    <button className="h-11 bg-[#F0B000] hover:bg-[#E0A000] transition duration-200 rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                         Request Your Free Demo Now
                     </button>
                 </div>

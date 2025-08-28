@@ -111,11 +111,11 @@ const WhyUs = () => {
                         </div>
                     </div>
                     <div className="flex gap-3 justify-start items-center sm:flex-row flex-col">
-                        <button className="h-11 sm:w-fit w-full bg-[#F0B000] rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+                        <button className="h-11 sm:w-fit w-full bg-[#F0B000] hover:bg-[#E0A000] transition duration-200 rounded px-6 text-[#472200] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                             Try VILMA.AI for free today
                         </button>
 
-                        <button className="h-11 sm:w-fit w-full border border-[#F0B000] rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
+                        <button className="h-11 sm:w-fit w-full border hover:bg-[#e0a00017] transition duration-200 border-[#F0B000] rounded px-6 text-[#F0B000] text-[16px] leading-[20px] font-inter font-medium cursor-pointer">
                             Request a Free Demo
                         </button>
                     </div>
