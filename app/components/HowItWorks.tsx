@@ -16,7 +16,7 @@ const HowItWorks = () => {
             steps: 'STEP 01',
             title: 'Sign Up & Access',
             description: 'Get your personalized dashboard instantly.',
-            imageSrc: '/assets/how-it-works-card-bg.png',
+            imageSrc: '/assets/steps1.svg',
             imageAlt: 'Sign Up & Access'
         },
         {
@@ -24,7 +24,7 @@ const HowItWorks = () => {
             steps: 'STEP 02',
             title: 'Complete Smart Onboarding',
             description: 'Define your business goals step by step.',
-            imageSrc: '/assets/how-it-works-card-bg.png',
+            imageSrc: '/assets/steps2.svg',
             imageAlt: 'Complete Smart Onboarding'
         },
         {
@@ -32,7 +32,7 @@ const HowItWorks = () => {
             steps: 'STEP 03',
             title: 'Automate & Measure',
             description: 'Launch campaigns, generate documents, and track results in one place.',
-            imageSrc: '/assets/how-it-works-card-bg.png',
+            imageSrc: '/assets/steps3.svg',
             imageAlt: 'Automate & Measure'
         }
     ]
@@ -59,13 +59,15 @@ const HowItWorks = () => {
                             key={useCase.id}
                             className='bg-[#FFFBED] ring-[0.2px] ring-[#06244333] rounded-[30px] p-5 hover:shadow-sm transition-shadow duration-300'
                         >
-                            <Image
-                                src={useCase.imageSrc}
-                                alt={useCase.imageAlt}
-                                width={350}
-                                height={258}
-                                className='rounded-[18px] w-full h-auto object-cover bg-white'
-                            />
+                            <div className='w-[350px] bg-white rounded-[18px] h-[258px] bg-cover flex items-center justify-center' style={{backgroundImage:"url('/assets/how-it-works-card-bg.png')"}}>
+                                <Image
+                                    src={useCase.imageSrc}
+                                    alt={useCase.imageAlt}
+                                    width={250}
+                                    height={200}
+                                    className='object-cover mt-1'
+                                />
+                            </div>
                             <h3 className='mt-6 text-[#000000] text-[16px] leading-[24px] font-light'>{useCase.steps}</h3>
                             <div className='mt-6 space-y-3'>
                                 <h3 className='text-[#333333] text-[20px] leading-[24px] font-semibold'>

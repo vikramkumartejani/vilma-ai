@@ -73,14 +73,15 @@ const SuccessStories: React.FC = () => {
   const renderStars = (rating: number) => {
     return Array.from({ length: rating }, (_, index) => (
       <img
+        key={index}
         src="/assets/star.svg"
         alt="star"
         width={16}
         height={16}
-        className="w-[16px] h-[16px]"
+        className="w-4 h-4"
       />
-    ));
-  };
+    ))
+  }
 
   const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
     <div className="bg-[#F8F8F8] rounded-[20px] h-[180px] md:h-[208px] w-[250px] md:w-[430px] p-4 md:p-6 shadow-lg border border-black/10 hover:shadow-xl transition-all duration-300 flex flex-col flex-shrink-0 mx-2 md:mx-4">
@@ -162,7 +163,7 @@ const SuccessStories: React.FC = () => {
       `}</style>
 
       <section className="relative w-full py-12 md:py-20 overflow-hidden bg-white">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div className="relative z-10 w-full  mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12 md:mb-16">
             <div className="inline-block px-3 py-1 text-[#252525] text-[12px] leading-[16px] md:text-[14px] md:leading-[20px] mb-3 md:mb-4">
@@ -178,8 +179,7 @@ const SuccessStories: React.FC = () => {
 
           {/* First Row - Moving Left to Right */}
           <div className="mb-6 md:mb-8 relative overflow-hidden">
-            {/* Fade overlays */}
-            <div className="absolute left-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-r bg-opacity-50 from-white to-transparent z-20 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-r bg-opacity-20 from-white to-transparent z-20 pointer-events-none"></div>
             <div className="absolute right-0 top-0 w-[100px] md:w-[500px] h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
 
             <div className="flex scroll-left">
