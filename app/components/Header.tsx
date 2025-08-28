@@ -71,10 +71,10 @@ const Header: React.FC = () => {
     ]
 
     return (
-        <header className={`w-full px-4 md:px-6 lg:px-8 fixed top-0 z-30 transition-all duration-300 ${
+        <header className={`w-full px-4 md:px-6 lg:px-8 fixed top-0 z-30 transition-all duration-300 border-b ${
             isScrolled 
-            ? 'mt-0 bg-white shadow-sm border-b border-gray-100' 
-            : 'mt-4 md:mt-8 lg:mt-[43px]'
+            ? 'mt-0 bg-white shadow-sm border-gray-100' 
+            : 'mt-4 md:mt-8 lg:mt-[43px] border-[rgba(255,255,255,0)]'
         }`}>
             <div className={`max-w-[1263px] mx-auto w-full ${isScrolled ? 'bg-white' : ''}`}>
                 <div className={`w-full flex items-center justify-between gap-5 transition-all duration-300 ${
