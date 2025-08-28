@@ -39,7 +39,6 @@ const HowItWorks = () => {
     return (
         <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:px-6 lg:px-8'>
             <div className='max-w-[1264px] mx-auto w-full'>
-                {/* Header Section */}
                 <div className="text-center mb-[60px]">
                     <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
                         How it Works

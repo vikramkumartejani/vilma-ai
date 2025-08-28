@@ -35,7 +35,6 @@ const FAQs: React.FC = () => {
   return (
     <section className="md:mt-[60px] w-full py-[30px] sm:py-[60px] px-4 md:px-6 lg:px-8">
       <div className="max-w-[896px] w-full mx-auto">
-        {/* Header */}
         <div className="text-center mb-11">
           <span className="text-[14px] leading-[20px] font-medium text-[#252525]">
             FAQs

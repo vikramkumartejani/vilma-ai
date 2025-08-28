@@ -32,7 +32,6 @@ const ProblemsHoldingYouBack = () => {
     return (
         <div className='w-full mt-5 sm:mt-10 md:mt-20 lg:mt-[120px] py-[30px] md:py-10 lg:py-[60px] px-4 md:px-6 lg:px-8'>
             <div className='max-w-[1264px] mx-auto w-full'>
-                {/* Header Section */}
                 <div className="text-center mb-[60px]">
                     <h2 className="mb-3 text-[36px] md:text-[44px] leading-[44px] sm:leading-[60px] font-semibold tracking-[-2px] text-[#252525]">
                         Are These Problems Holding You Back?

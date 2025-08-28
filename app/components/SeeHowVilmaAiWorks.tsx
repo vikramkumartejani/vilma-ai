@@ -12,7 +12,6 @@ const SeeHowVilmaAiWorks = () => {
                     />
                 </div>
 
-                {/* Content */}
                 <div className="relative z-10 text-center max-w-[815px] mx-auto">
                     <h2 className="text-[44px] md:text-[52px] leading-[52px] sm:leading-[60px] tracking-[-2.44px] font-semibold text-[#252525] mb-6">
                         See how VILMA.AI works in 2 minutes.

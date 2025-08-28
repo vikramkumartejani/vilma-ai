@@ -49,7 +49,6 @@ const TrustedBy: React.FC = () => {
         }
     ]
 
-    // Duplicate the array to create seamless infinite scroll
     const duplicatedCompanies = [...trustedCompanies, ...trustedCompanies, ...trustedCompanies, ...trustedCompanies]
 
     return (
@@ -58,7 +57,6 @@ const TrustedBy: React.FC = () => {
                 Trusted By
             </h2>
 
-            {/* Auto-sliding Carousel Container */}
             <div className='max-w-[1160px] mx-auto overflow-hidden'>
                 <div className='flex items-center gap-6 sm:gap-[109px] animate-scroll'>
                     {duplicatedCompanies.map((company, index) => (

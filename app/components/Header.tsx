@@ -23,7 +23,6 @@ const Header: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    // Lock body scroll when mobile menu is open
     useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden'
@@ -80,7 +79,6 @@ const Header: React.FC = () => {
                 <div className={`w-full flex items-center justify-between gap-5 transition-all duration-300 ${
                     isScrolled ? 'py-4' : 'py-0'
                 }`}>
-                    {/* Logo */}
                     <Link href='/' className='flex-shrink-0 hover:opacity-80 transition-opacity duration-200'>
                         <Image
                             src='/assets/logo.svg'
@@ -91,7 +89,6 @@ const Header: React.FC = () => {
                         />
                     </Link>
 
-                    {/* Navigation Menu */}
                     <nav className='hidden lg:block flex-1 xl:max-w-[681px] mx-auto'>
                         <ul className='w-full flex items-center justify-between gap-2'>
                             {navigationLinks.map((link) => (
@@ -124,7 +121,6 @@ const Header: React.FC = () => {
                         )}
                     </button>
 
-                    {/* CTA Button */}
                     <button className="lg:block hidden h-[42px] rounded px-6 text-[16px] leading-[20px] font-inter font-medium cursor-pointer transition-all duration-200 bg-[#F0B000] hover:bg-[#E0A000] text-[#472200] hover:shadow-sm">
                         Start Free Trial
                     </button>
@@ -141,7 +137,6 @@ const Header: React.FC = () => {
                 }}
             >
                 <div className="p-6 bg-white h-full">
-                    {/* Mobile Menu Logo */}
                     <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-6">
                         <Image
                             src='/assets/logo.svg'
