@@ -70,7 +70,7 @@ const WhyUs = () => {
     ];
 
     return (
-        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:pl-6 lg:pl-8 relative'>
+        <div className='w-full md:mt-[60px] py-[30px] md:py-[60px] px-4 md:pl-6 lg:pl-8 border-y relative overflow-hidden'>
             <div className='max-w-[1264px] mx-auto w-full flex items-start justify-between'>
                 <div className='max-w-[567px] w-full text-center sm:text-left'>
                     <h4 className="text-[14px] leading-[20px] font-medium text-[#252525]">
@@ -119,10 +119,22 @@ const WhyUs = () => {
                             Request a Free Demo
                         </button>
                     </div>
-
                 </div>
             </div>
-            {/* <Image src='/assets/why-us-right-side.svg' alt='why-us-right-side' width={710} height={613} className='absolute top-3/5 -translate-y-1/2 right-0' /> */}
+
+            <div className="absolute top-1/2 -translate-y-1/2 right-0 h-[500px] xl:h-[613px] rounded-tl-[15px] w-[550px] xl:w-[710px] hidden lg:block shadow-sm overflow-hidden" style={{ background: "linear-gradient(48.52deg, #F6F7F9 4.95%, #F6F7F9 55.56%, #F6F7F9 94.19%)", backdropFilter: "blur(50px)" }}>
+                <Image src='/assets/three-dot.svg' alt='three-dot' width={32} height={6} className='absolute top-[19px] left-[24px]' />
+                <div className="absolute bottom-0 right-0 w-[530px] xl:w-[686px] h-[480px] xl:h-[580px] rounded-tl-[15px] overflow-hidden" style={{ boxShadow: "0px 24px 120px 0px #00000033" }}>
+                    <Image
+                        src='/assets/why-us-right.png'
+                        alt='why-us-right-side'
+                        width={686}
+                        height={580}
+                        priority
+                        className='w-full h-full object-contain'
+                    />
+                </div>
+            </div>
         </div>
     )
 }

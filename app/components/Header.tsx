@@ -71,7 +71,7 @@ const Header: React.FC = () => {
     ]
 
     return (
-        <header className={`w-full px-4 md:px-6 lg:px-8 fixed top-0 z-30 transition-all duration-300 border-b ${
+        <header className={`w-full px-4 md:px-6 lg:px-8 fixed z-40 top-0 transition-all duration-300 border-b ${
             isScrolled 
             ? 'mt-0 bg-white shadow-sm border-gray-100' 
             : 'mt-4 md:mt-8 lg:mt-[43px] border-[rgba(255,255,255,0)]'
